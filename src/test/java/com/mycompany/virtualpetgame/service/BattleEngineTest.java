@@ -10,7 +10,10 @@ import com.mycompany.virtualpetgame.User;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-/** Tests for the battle rules (no database needed). */
+/**
+ *
+ * @author Mitchell
+ */
 public class BattleEngineTest {
 
     private Pet strongPet() {
