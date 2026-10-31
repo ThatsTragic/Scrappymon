@@ -10,5 +10,32 @@
         <maven.compiler.release>25</maven.compiler.release>
         <exec.mainClass>com.mycompany.virtualpetgame.VirtualPetGame</exec.mainClass>
     </properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.derby</groupId>
+			<artifactId>derby</artifactId>
+			<version>10.14.2.0</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.13.2</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.2.5</version>
+				<configuration>
+					<systemPropertyVariables>
+						<petgame.db.url>jdbc:derby:memory:testdb;create=true</petgame.db.url>
+					</systemPropertyVariables>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
     <name>VirtualPetGame2</name>
 </project>
