@@ -8,8 +8,10 @@ import java.sql.Statement;
 import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
-
-/** Tests the service together with the real DAOs on the in-memory test database. */
+/**
+ *
+ * @author Mitchell
+ */
 public class GameServiceTest {
     private GameService service;
 

@@ -6,8 +6,10 @@ import com.mycompany.virtualpetgame.PetType;
 import com.mycompany.virtualpetgame.User;
 import org.junit.Test;
 import static org.junit.Assert.*;
-
-/** Tests for the shop rules (no database needed). */
+/**
+ *
+ * @author Mitchell
+ */
 public class ShopServiceTest {
     private final ShopService shop = new ShopService();
 
